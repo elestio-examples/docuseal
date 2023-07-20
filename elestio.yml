@@ -17,7 +17,7 @@ environments:
   - key: "PG_PASSWORD"
     value: "random_password"
   - key: "URL"
-    value: "https://[CI_CD_DOMAIN]
+    value: "https://[CI_CD_DOMAIN]"
 
 config:
   runTime: "dockerCompose"
