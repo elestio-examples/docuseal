@@ -10,8 +10,14 @@ ports:
 environments:
   - key: "SOFTWARE_VERSION_TAG"
     value: "latest"
+  - key: "ADMIN_PASSWORD"
+    value: "random_password"
+  - key: "ADMIN_EMAIL"
+    value: "[EMAIL]"
   - key: "PG_PASSWORD"
     value: "random_password"
+  - key: "URL"
+    value: "https://[CI_CD_DOMAIN]
 
 config:
   runTime: "dockerCompose"
