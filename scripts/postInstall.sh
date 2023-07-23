@@ -15,10 +15,6 @@ authenticity_token=$(echo "$response" | grep -o '<input type="hidden" name="auth
 echo "csrf_token: ${csrf_token}"
 echo "authenticity_token: ${authenticity_token}"
 
-target=$(docker-compose port app 3000)
-
-
-
 curl -b cookies.txt ${URL}/setup \
   -H 'accept: text/vnd.turbo-stream.html, text/html, application/xhtml+xml' \
   -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,he;q=0.6' \

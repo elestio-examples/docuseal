@@ -21,6 +21,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: ${PG_PASSWORD}
       POSTGRES_DB: docuseal
+      HOST: ${DOMAIN}
 
   # caddy:
   #   image: caddy:${SOFTWARE_VERSION_TAG}
