@@ -40,5 +40,3 @@ By default we setup a CNAME on elestio.app domain, but probably you will want to
 Open Elestio dashboard > Service overview > click on UPDATE CONFIG button > Env tab
 there update `URL` & `DOMAIN` with your real domain
 then, click on Update & Restart
-
-You will start over with a fresh instance of Docuseal directly configured with the correct custom domain name and federation will work as expected
