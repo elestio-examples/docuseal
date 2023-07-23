@@ -13,5 +13,17 @@ Deploy DocuSeal server with CI/CD on Elestio
 You can open DocuSeal ADMIN UI here:
 
     URL: https://[CI_CD_DOMAIN]/admin
-    email: root
+    email: [ADMIN_EMAIL]
     password: [ADMIN_PASSWORD]
+
+# SMTP
+
+To configure the SMTP server, click on settings on the top right of the screen, then, click on Email on the left tab.
+
+you can configure the SMTP server with the following credentials:
+
+    Host: 172.17.0.1
+    Port: 25
+    Username: <space>
+    Password: <space>
+    Send from Email: [DOMAIN]@vm.elestio.app
