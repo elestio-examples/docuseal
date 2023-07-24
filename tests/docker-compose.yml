@@ -1,0 +1,36 @@
+version: "3.3"
+
+services:
+  app:
+    depends_on:
+      - postgres
+    image: elestio4test/docuseal:${SOFTWARE_VERSION_TAG}
+    ports:
+      - 172.17.0.1:5967:3000
+    volumes:
+      - ./docuseal_data:/data
+    environment:
+      FORCE_SSL: "true"
+      DATABASE_URL: postgresql://postgres:${PG_PASSWORD}@postgres:5432/docuseal
+
+  postgres:
+    image: elestio/postgres:${SOFTWARE_VERSION_TAG}
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_DB: docuseal
+      HOST: ${DOMAIN}
+
+  # caddy:
+  #   image: caddy:${SOFTWARE_VERSION_TAG}
+  #   command: caddy reverse-proxy --from $HOST --to app:3000
+  #   ports:
+  #     - 80:80
+  #     - 443:443
+  #     - 443:443/udp
+  #   volumes:
+  #     - .:/data
+  #   environment:
+  #     - HOST=${HOST}
