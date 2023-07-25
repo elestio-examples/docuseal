@@ -14,7 +14,7 @@ services:
       DATABASE_URL: postgresql://postgres:${PG_PASSWORD}@postgres:5432/docuseal
 
   postgres:
-    image: elestio/postgres:${SOFTWARE_VERSION_TAG}
+    image: elestio/postgres:latest
     volumes:
       - ./pg_data:/var/lib/postgresql/data
     environment:
