@@ -5,6 +5,7 @@ services:
     depends_on:
       - postgres
     image: docuseal/docuseal:${SOFTWARE_VERSION_TAG}
+    restart: always
     ports:
       - 172.17.0.1:5967:3000
     volumes:
@@ -15,6 +16,7 @@ services:
 
   postgres:
     image: elestio/postgres:latest
+    restart: always
     volumes:
       - ./pg_data:/var/lib/postgresql/data
     environment:
