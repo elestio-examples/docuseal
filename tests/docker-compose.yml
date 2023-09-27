@@ -11,7 +11,7 @@ services:
     volumes:
       - ./docuseal_data:/data
     environment:
-      FORCE_SSL: "true"
+      FORCE_SSL: "false"
       DATABASE_URL: postgresql://postgres:${PG_PASSWORD}@postgres:5432/docuseal
 
   postgres:
