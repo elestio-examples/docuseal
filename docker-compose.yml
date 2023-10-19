@@ -4,7 +4,7 @@ services:
   app:
     depends_on:
       - postgres
-    image: docuseal/docuseal:${SOFTWARE_VERSION_TAG}
+    image: elestio/docuseal:${SOFTWARE_VERSION_TAG}
     restart: always
     ports:
       - 172.17.0.1:5967:3000
