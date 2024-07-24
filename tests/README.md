@@ -10,7 +10,7 @@
 
 [Docuseal](https://github.com/docusealco/docuseal) is an open source platform that provides secure and efficient digital document signing and processing. Create PDF forms to have them filled and signed online on any device with an easy-to-use, mobile-optimized web tool.
 
-<img src="https://github.com/elestio-examples/docuseal/raw/main/docuseal.png" alt="Docuseal" width="800">
+<img src="https://github.com/elestio-examples/docuseal/raw/main/docuseal.jpg" alt="Docuseal" width="800">
 
 Deploy a <a target="_blank" href="https://elest.io/open-source/docuseal">fully managed Docuseal</a> on <a target="_blank" href="https://elest.io/">elest.io</a> if you want automated backups, reverse proxy with SSL termination, firewall, automated OS & Software updates, and a team of Linux experts and open source enthusiasts to ensure your services are always safe, and functional.
 
@@ -90,7 +90,6 @@ Here are some example snippets to help you get started creating a container.
         #     - .:/data
         #   environment:
         #     - HOST=${HOST}
-
 
 # Maintenance
 
